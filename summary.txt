@@ -1,0 +1,11 @@
+Joshua Hou HW1 (open in an IDE (vscode))
+
+What I learned from the second article, is first to be a web dev. is to really hammer down HTML, CSS, and javascript. Without the basics down it seems like,
+you can't really do much with supreme knowledge in one with out knowing the other. They work in unison. Side note, it got me signed up for coderbyte. It also taught
+me about CSS Media Queries and benefits of preprocessors. Now I understand why my dev friends use some. Another thing the article taught me was that you pick the back-end
+language for the right situation. Next I learned a little about REST, to make requests to websites to grab which ever data (json) and use it to manipulate. Another great
+thing it taught me was version control, I hardly use this at all and definitely need to use a proper one like Git.
+
+From the first article I was very surprised how big the road maps were. I didn't realize how deep you have to touch on each subject. I also heard of devops but never really looked
+into it, and now I see that devops is sort of like a monitor but for code. Kind of like quality assurance before code shipment. But for all, you do need to have web security down, so you
+can help prevent cracking to your software. As time goes on, I definitely expect all roadmaps to be changing forever.

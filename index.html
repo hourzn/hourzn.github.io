@@ -1,0 +1,54 @@
+<!--
+GUI Assignment: Creating Your First Web Page
+Joshua Hou
+9/7/21
+
+A simple webpage with navigation linking to my github and a about me. 
+In this webpage, a table, random num script, and image is used.
+There is also an alert.
+
+<link> refers to my css style sheet located in css folder.
+
+<script> runs my scripts file script.js
+
+<div> I created a container for all tags nested in there for my css.
+
+<nav> is my navigation menu.
+
+<footer> I created my table in there because it seemed like a good UI.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Joshua Hou</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container" onload='random()'>
+        <h1>Joshua Hou's webpage</h1>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a class='aboutme' href="about.html">About Me</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/hourzn">GitHub</a>
+        </nav>
+        <p>Hi Guys, Welcome to my webpage. This page was created for HW 1.</p>
+
+    </div>
+    <footer>
+        <table>
+            <tr>
+                <th>Vistor Count</th>
+            </tr>
+            <tr>
+                <td id="randomnum"></td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>
