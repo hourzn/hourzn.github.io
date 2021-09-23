@@ -1,56 +1,59 @@
-<!--
-GUI Assignment: Creating Your First Web Page
-Joshua Hou
-9/7/21
-
-A simple webpage with navigation linking to my github and a about me. 
-In this webpage, a table, random num script, and image is used.
-There is also an alert.
-
-<link> refers to my css style sheet located in css folder.
-
-<script> runs my scripts file script.js
-
-<div> I created a container for all tags nested in there for my css.
-
-<nav> is my navigation menu.
-
-<footer> I created my table in there because it seemed like a good UI.
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <title>Pacific Trails Resort</title>
     <meta charset="utf-8">
-    <title>Joshua Hou</title>
-    <link rel="stylesheet" href="css/index.css">
-    <script src="script.js"></script>
+    <link href="pacific.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>   <![endif]-->
 </head>
 
 <body>
-    <div class="container" onload='random()'>
-        <h1>Joshua Hou's webpage</h1>
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a class='aboutme' href="about.html">About Me</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/hourzn">GitHub</a>
+    <div id="wrapper">
+        <header>
+            <h1>Pacific Trails Resort</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="yurts.html">Yurts</a>
+                </li>
+                <li><a href="activities.html">Activities</a>
+                </li>
+                <li><a href="reservations.html">Reservations</a>
+            </ul>
         </nav>
-        <p>Hi Guys, Welcome to my webpage. This page was created for HW 1.</p>
-
+        <div id="content">
+            <h2>Enjoy Nature in Luxury</h2>
+            <img src="coast.jpg" alt="Pacific Coast">
+            <p><span class="resort">Pacific Trails Resort</span> offers a special lodging experience on the California
+                North Coast. Relax in serenity with panoramic views of the Pacific Ocean.</p>
+            <ul>
+                <li>Private yurts with decks overlooking the ocean</li>
+                <li>Activities lodge with fireplace and gift shop</li>
+                <li>Nightly fine dining at the Overlook Cafe</li>
+                <li>Heated outdoor pool and whirlpool</li>
+                <li>Guided hiking tours of the redwoods</li>
+            </ul>
+            <div id="contact">
+                <span class="resort">Pacific Trails Resort</span>
+                <br> 12010 Pacific Trails Road
+                <br> Zephyr, CA 95555
+                <br>
+                <br> 888-555-5555
+                <br>
+                <br>
+            </div>
+        </div>
+        <footer>
+            Copyright &copy; 2014 Pacific Trails Resort
+            <br>
+            <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+        </footer>
     </div>
-    <footer>
-        <img src='https://www.w3.org/Icons/valid-html20.png'>
-        <img src='http://www.w3.org/Icons/valid-css.png'>
-        <table>
-            <tr>
-                <th>Vistor Count</th>
-            </tr>
-            <tr>
-                <td id="randomnum"></td>
-            </tr>
-        </table>
-    </footer>
 </body>
 
 </html>

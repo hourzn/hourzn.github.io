@@ -1,0 +1,132 @@
+/*
+GUI Assignment: Edit pacific.css
+Joshua Hou
+9/22/21
+
+Comments down below. If I need to add more next time please email me, I don't think I need to
+because it is straight forward what I didn't comment.
+*/
+header,
+hgroup,
+nav,
+footer,
+figure,
+figcaption,
+aside,
+section,
+article {
+    display: block;
+}
+body {
+    /* set backgroun img */
+    background-image: url('ptrbackground.jpg');
+    overflow: hidden;
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    /* set header img and fill in the rest since we dont want img to stretch */
+    background-image: url('sunset.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #01012b;
+}
+nav {
+    /* Get rid of link underline and edit colors */
+    width: 200px;
+    margin: auto;
+    float: left;
+}
+nav ul {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+nav a:visited {
+    color: #344873;
+}
+nav a:link {
+    text-decoration: none;
+    color: #000033;
+}
+nav a:hover {
+    color: #ffffff;
+}
+h1 {
+    margin-bottom: 0;
+    padding: 10px;
+    color: white;
+}
+h2 {
+    color: #3399cc;
+}
+h1,
+h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    padding: 10px;
+}
+#contact {
+    font-size: 90%;
+}
+dt {
+    color: #000033;
+}
+footer {
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+#content {
+    text-align: left;
+    padding-left: 280px;
+}
+
+span {
+    text-align: center;
+}
+
+#wrapper {
+    /* Set up the container */
+    display: block;
+    margin: auto;
+    min-width: 600px;
+    max-width: 80%;
+    background-color: #3399cc;
+}
+
+ul {
+    list-style-type: none;
+}
+#content {
+    background-color: #fff;
+    margin: auto;
+    padding: 1px 0px 0px 30px;
+    margin-left: 200px;
+    color: #8a8a8c;
+}
+#content p {
+    padding-right: 50px;
+}
+#content li::before {
+    content: url(marker.gif);
+    padding-right: 5px;
+}
+
+#wrapper footer {
+    /* Fix the footer to match the wrapper */
+    margin-left: 200px;
+    max-height: auto;
+    font-style: italic;
+    padding: 15px;
+    background-color: white;
+    font-size: small;
+}
+
+.resort {
+    color: teal;
+    font-size: large;
+    font-weight: lighter;
+}
+
+img {
+    float: left;
+    padding-right: 50px;
+}
