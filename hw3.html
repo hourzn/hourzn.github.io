@@ -1,0 +1,60 @@
+<!--
+GUI Assignment: Creating an Interactive Dynamic Table
+Joshua Hou
+10/21/21
+
+A multiplication table generator based on user input with valid check, built from scratch (and some very small bootstrap). 
+I used w3 school, mycolor space, getcssscan, stackoverflow and mozilla to help look for stuff I didn't know.
+I also am pretty familiar with js because I use React quite often. My colors are also based of the Kotlin icon color scheme.
+
+<link> refers to my css style sheet located in css folder.
+
+<script> runs my scripts file hw3.js in my js folder.
+
+<div> I created a container for all tags nested in there for my css.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Multiplcation Table HW3</title>
+    <meta charset="utf-8">
+    <link href="./css/hw3.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/hw3.js"></script>
+</head>
+
+<body>
+    <h1>Multiplication Table Generator</h1>
+    <div id="main-container">
+        <div class="input-container">   
+            <div id='min-column'> 
+                <label>Minimum Column Value:</label><br>
+                <input id="mincol" name= "mincol" type="number"> 
+            </div>
+            <div id='max-column'> 
+                <label>Maximum Column Value:</label><br>
+                <input id="maxcol" name= "maxcol" type="number"> 
+            </div>
+            <div id='min-row'> 
+                <label>Minimum Row Value:</label><br>
+                <input id="minrow" name= "minrow" type="number"> 
+            </div>
+            <div id='max-row'> 
+                <label>Maximum Row Value:</label><br>
+                <input id="maxrow" name= "maxrow" type="number"> 
+            </div>
+            <div class="button-container">
+                <button type="button" class="btn btn-primary btn-sm" onclick="genTable()">Create Table</button>
+            </div>
+        </div>
+        <span id="errorsign"></span>
+        <div id="table-container">
+            <table id='table'></table>
+        </div>
+    </div>
+</body>
+
+</html>
