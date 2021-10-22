@@ -7,6 +7,8 @@ A multiplication table generator based on user input with valid check, built fro
 I used w3 school, mycolor space, getcssscan, stackoverflow and mozilla to help look for stuff I didn't know.
 I also am pretty familiar with js because I use React quite often. My colors are also based of the Kotlin icon color scheme.
 
+website: https://hourzn.github.io/
+
 <link> refers to my css style sheet located in css folder.
 
 <script> runs my scripts file hw3.js in my js folder.
@@ -29,7 +31,7 @@ I also am pretty familiar with js because I use React quite often. My colors are
 <body>
     <h1>Multiplication Table Generator</h1>
     <div id="main-container">
-        <div class="input-container">   
+        <form class="input-container">   
             <div id='min-column'> 
                 <label>Minimum Column Value:</label><br>
                 <input id="mincol" name= "mincol" type="number"> 
@@ -49,7 +51,7 @@ I also am pretty familiar with js because I use React quite often. My colors are
             <div class="button-container">
                 <button type="button" class="btn btn-primary btn-sm" onclick="genTable()">Create Table</button>
             </div>
-        </div>
+        </form>
         <span id="errorsign"></span>
         <div id="table-container">
             <table id='table'></table>

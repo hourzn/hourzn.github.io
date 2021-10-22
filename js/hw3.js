@@ -2,6 +2,8 @@
 GUI Assignment: Creating an Interactive Dynamic Table
 Joshua Hou
 10/21/21
+
+website: https://hourzn.github.io/
 */
 function genTable() {
     var minimumcolumn = +document.getElementById('mincol').value;
