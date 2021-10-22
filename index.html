@@ -1,56 +1,60 @@
 <!--
-GUI Assignment: Creating Your First Web Page
+GUI Assignment: Creating an Interactive Dynamic Table
 Joshua Hou
-9/7/21
+10/21/21
 
-A simple webpage with navigation linking to my github and a about me. 
-In this webpage, a table, random num script, and image is used.
-There is also an alert.
+A multiplication table generator based on user input with valid check, built from scratch (and some very small bootstrap). 
+I used w3 school, mycolor space, getcssscan, stackoverflow and mozilla to help look for stuff I didn't know.
+I also am pretty familiar with js because I use React quite often. My colors are also based of the Kotlin icon color scheme.
 
 <link> refers to my css style sheet located in css folder.
 
-<script> runs my scripts file script.js
+<script> runs my scripts file hw3.js in my js folder.
 
 <div> I created a container for all tags nested in there for my css.
-
-<nav> is my navigation menu.
-
-<footer> I created my table in there because it seemed like a good UI.
 -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <title>Multiplcation Table HW3</title>
     <meta charset="utf-8">
-    <title>Joshua Hou</title>
-    <link rel="stylesheet" href="css/index.css">
-    <script src="script.js"></script>
+    <link href="./css/hw3.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/hw3.js"></script>
 </head>
 
 <body>
-    <div class="container" onload='random()'>
-        <h1>Joshua Hou's webpage</h1>
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a class='aboutme' href="about.html">About Me</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/hourzn">GitHub</a>
-        </nav>
-        <p>Hi Guys, Welcome to my webpage. This page was created for HW 1.</p>
-
+    <h1>Multiplication Table Generator</h1>
+    <div id="main-container">
+        <div class="input-container">   
+            <div id='min-column'> 
+                <label>Minimum Column Value:</label><br>
+                <input id="mincol" name= "mincol" type="number"> 
+            </div>
+            <div id='max-column'> 
+                <label>Maximum Column Value:</label><br>
+                <input id="maxcol" name= "maxcol" type="number"> 
+            </div>
+            <div id='min-row'> 
+                <label>Minimum Row Value:</label><br>
+                <input id="minrow" name= "minrow" type="number"> 
+            </div>
+            <div id='max-row'> 
+                <label>Maximum Row Value:</label><br>
+                <input id="maxrow" name= "maxrow" type="number"> 
+            </div>
+            <div class="button-container">
+                <button type="button" class="btn btn-primary btn-sm" onclick="genTable()">Create Table</button>
+            </div>
+        </div>
+        <span id="errorsign"></span>
+        <div id="table-container">
+            <table id='table'></table>
+        </div>
     </div>
-    <footer>
-        <img src='https://www.w3.org/Icons/valid-html20.png'>
-        <img src='http://www.w3.org/Icons/valid-css.png'>
-        <table>
-            <tr>
-                <th>Vistor Count</th>
-            </tr>
-            <tr>
-                <td id="randomnum"></td>
-            </tr>
-        </table>
-    </footer>
 </body>
 
 </html>
