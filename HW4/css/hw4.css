@@ -1,0 +1,127 @@
+/*
+GUI Assignment: Creating an Interactive Dynamic Table
+Joshua Hou
+10/21/21
+
+I used https://mycolor.space/ for gradient.
+I used https://getcssscan.com/css-box-shadow-examples for shadow. 
+
+website: https://hourzn.github.io/
+*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(
+        to right top,
+        #1aa2d4,
+        #3199d2,
+        #448fce,
+        #5685c8,
+        #657bc0,
+        #6c77bd,
+        #7373b9,
+        #796fb5,
+        #7b70b7,
+        #7d72ba,
+        #7f73bc,
+        #8175bf
+    );
+    height: 100vh;
+}
+#main-container {
+    margin: 0 auto;
+    text-align: center;
+}
+h1 {
+    margin: 10px auto 10px auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.input-container {
+    display: flex;
+    margin: 0 auto 20px auto;
+    justify-content: space-between;
+    max-width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 10px;
+}
+
+input {
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 30px;
+}
+
+p {
+    font-weight: bolder;
+    font-size: 32px;
+    color: black;
+}
+
+table {
+    margin: 0 auto 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f6891f;
+    padding: 3px;
+    border: 1px solid black;
+    border-collapse: separate;
+}
+/* makes first first row child transparent */
+tr:first-child > td:first-child {
+    opacity: 0;
+}
+
+tr:first-child > td {
+    background-color: rgb(26, 162, 212, 0.4);
+}
+
+td:first-child {
+    background: rgba(83, 41, 110, 0.4);
+    margin: 5px;
+}
+
+#table-container {
+    overflow: auto;
+    max-width: 800px;
+    max-height: 600px;
+    margin: 0 auto;
+}
+/* Custom scroll bar height / width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1d1d1d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.sliders {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 10px;
+}
