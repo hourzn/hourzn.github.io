@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: #919494;
+}
+
+h1 {
+    top: 0;
+    position: absolute;
+}
+
+#droptable {
+    font-size: xx-large;
+    padding-bottom: 200px;
+    margin: 20px;
+}
+
+#scrabblerack {
+}
+
+#buttoncontainer {
+    padding: 10px;
+    
+    
+}
+
+.scorecontainer {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    border: black;
+    padding-top: 100px;
+}
+
+#rackBG {
+    z-index: -1;
+    position: absolute;
+    width: 30%;
+    margin-bottom: 150px;
+
+}
+
+.placeTile {
+    display: flex;
+    height: 50px;
+    width: auto;
+    margin-top: 40px;
+  }
